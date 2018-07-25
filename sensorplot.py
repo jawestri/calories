@@ -49,3 +49,4 @@ print("Your average speed during walk(in mph): %.2f" % avg_speed)
 print("Your BMR: %.2f" % bmr)
 print("Total time of walk(in hours): %.2f" % hours)
 print("Mets: %.2f" % mets)
+
