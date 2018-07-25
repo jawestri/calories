@@ -8,7 +8,7 @@ import math
 import pandas as panda
 import matplotlib.pyplot as plt
 # import csv file and read the columns for time and speed
-data  = panda.read_csv("C:\\Users\\jamiew\\Documents\\GitHub\\test.csv")
+data = panda.read_csv("C:\\Users\\jamiew\\Documents\\GitHub\\test.csv")
 time = data['time']
 speed = data['speed']
 # plot graph x = time, y = speed
