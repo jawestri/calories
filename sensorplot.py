@@ -7,7 +7,8 @@ Created on Wed Jul 25 11:35:48 2018
 import pandas as panda
 import matplotlib.pyplot as plt
 
-def calories(s,t,b,n):
+
+def calories(s, t, b, n):
     # calc avg speed, mets, and convert ms to hours
     ssum = sum(s)
     avg_speed = ssum/len(s)
@@ -36,12 +37,12 @@ time1 = data1['time']
 speed1 = data1['speed']
 
 # plot graph x = time, y = speed
-plt.plot(time, speed, 'm', label = 'Walk 1')
-plt.plot(time1, speed1, 'b', label = 'Walk 2')
+plt.plot(time, speed, 'm', label='Walk 1')
+plt.plot(time1, speed1, 'b', label='Walk 2')
 plt.xlabel("Time Elapsed(ms)")
 plt.ylabel("Speed  (MPH)")
 plt.title("Speed vs. Time")
-legend = plt.legend(loc = 'upper right', shadow = True)
+legend = plt.legend(loc='upper right', shadow=True)
 plt.show()
 
 # convert imports to list for calculations
@@ -60,9 +61,9 @@ if gender == 'm':
     bmr = 66 + (6.23 * weight) + (12.7 * height) - (6.8 * age)
 elif gender == 'f':
     bmr = 655 + (4.35 * weight) + (4.7 * height) - (4.7 * age)
- 
+
 # call cal calc func
 print("\nThe following results are just an estimate based on average speed, your Basal Metabolic Rate(BMR), Metabolic Equivalent Task(Met), and total duration of walk.")
-calories(speeds,times,bmr,1)
-calories(speeds1,times1,bmr,2)
+calories(speeds, times, bmr, 1)
+calories(speeds1, times1, bmr, 2)
 
