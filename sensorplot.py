@@ -31,7 +31,8 @@ def calories(s, t, b, n):
 
 # import csv file and read the columns for time and speed
 data = panda.read_csv("C:\\Users\\jamiew\\Documents\\GitHub\\test.csv")
-data1 = panda.read_csv("C:\\Users\\jamiew\\Documents\\GitHub\\calories\\sensor.csv")
+data1 = panda.read_csv("C:\\Users\\jamiew\\Documents\\GitHub\\calories\\"
+                       "sensor.csv")
 time = data['time']
 speed = data['speed']
 time1 = data1['time']
@@ -64,6 +65,8 @@ elif gender == 'f':
     bmr = 655 + (4.35 * weight) + (4.7 * height) - (4.7 * age)
 
 # call cal calc func
-print("\nThe following results are just an estimate based on average speed, your Basal Metabolic Rate(BMR), Metabolic Equivalent Task(Met), and total duration of walk.")
+print("\nThe following results are just an estimate based on average speed," 
+      "your Basal Metabolic Rate(BMR), Metabolic Equivalent Task(Met), "
+      "and total duration of walk.")
 calories(speeds, times, bmr, 1)
 calories(speeds1, times1, bmr, 2)
