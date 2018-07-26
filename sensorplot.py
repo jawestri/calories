@@ -65,7 +65,7 @@ elif gender == 'f':
     bmr = 655 + (4.35 * weight) + (4.7 * height) - (4.7 * age)
 
 # call cal calc func
-print("\nThe following results are just an estimate based on average speed," 
+print("\nThe following results are just an estimate based on average speed,"
       "your Basal Metabolic Rate(BMR), Metabolic Equivalent Task(Met), "
       "and total duration of walk.")
 calories(speeds, times, bmr, 1)
