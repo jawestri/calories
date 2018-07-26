@@ -28,6 +28,7 @@ def calories(s, t, b, n):
     print("Total time of walk(in hours): %.2f" % hours)
     print("Mets: %.2f" % mets)
 
+
 # import csv file and read the columns for time and speed
 data = panda.read_csv("C:\\Users\\jamiew\\Documents\\GitHub\\test.csv")
 data1 = panda.read_csv("C:\\Users\\jamiew\\Documents\\GitHub\\calories\\sensor.csv")
@@ -66,4 +67,3 @@ elif gender == 'f':
 print("\nThe following results are just an estimate based on average speed, your Basal Metabolic Rate(BMR), Metabolic Equivalent Task(Met), and total duration of walk.")
 calories(speeds, times, bmr, 1)
 calories(speeds1, times1, bmr, 2)
-
