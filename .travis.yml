@@ -1,7 +1,6 @@
 language: python
 python:
     - "3.6" 
-env: PANDAS=0.23.2 MATPLOTLIB=2.2.2
 cache: pip
 before_script: 
     - easy_install distribute  
