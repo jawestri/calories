@@ -47,9 +47,7 @@ elif gender == 'f':
 calories = bmr * (mets/24) * hours
 
 # display calorie results along with calculation variables
-print("\nThe following results are just an estimate based on average speed,
-      your Basal Metabolic Rate(BMR), Metabolic Equivalent Task(Met),
-      and total duration of walk.")
+print("\nThe following results are just an estimate based on average speed, your Basal Metabolic Rate(BMR), Metabolic Equivalent Task(Met), and total duration of walk.")
 print("\nYour calories burned during walk: %.2f" % calories)
 print("Your average speed during walk(in mph): %.2f" % avg_speed)
 print("Your BMR: %.2f" % bmr)
